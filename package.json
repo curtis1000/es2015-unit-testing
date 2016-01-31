@@ -1,0 +1,25 @@
+{
+  "name": "es2015-unit-testing",
+  "version": "1.0.0",
+  "description": "A bare-bones demo of unit testing an es2015 project with Mocha & Chai",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "babel --presets es2015 app --out-dir es5/app",
+    "test": "NODE_PATH=es5 mocha --recursive test/unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curtis1000/es2015-unit-testing.git"
+  },
+  "author": "curtis1000",
+  "bugs": {
+    "url": "https://github.com/curtis1000/es2015-unit-testing/issues"
+  },
+  "homepage": "https://github.com/curtis1000/es2015-unit-testing#readme",
+  "devDependencies": {
+      "babel-cli": "^6.4.5",
+      "babel-preset-es2015": "^6.3.13",
+      "chai": "^3.4.1",
+      "mocha": "^2.3.4"
+  }
+}
